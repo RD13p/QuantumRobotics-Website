@@ -1,0 +1,94 @@
+@import url(//db.onlinewebfonts.com/c/f220dbb7bde1d00644ad365e87d02af1?family=Coco+Gothic);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    overflow: hidden;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**Reset para REMS- 62.5% = 10px de 16px **/
+}
+
+.QU {
+    -webkit-animation: mainFadeIn 0s forwards;
+    -o-animation: mainFadeIn 0s forwards;
+    animation: mainFadeIn 0s forwards;
+    animation-delay: 1.8s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    color: black;
+    font-family: "Coco Gothic";
+    font-size: 10rem;
+    font-weight: 550;
+}
+
+.block {
+    width: 0%;
+    background: #1eb6db;
+    position: absolute;
+    height: 10rem;
+    animation: mainBlock 5s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+
+.contenedor-titulo {
+    width: 100%;
+    height: 100vh;
+    background: #f0f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            h1 {
+                font-family: "Coco Gothic";
+                color: #1eb6db;
+                font-size: 10rem;
+                font-weight: 550;
+                -webkit-animation: mainFadeIn 0s forwards;
+                -o-animation: mainFadeIn 0s forwards;
+                animation: mainFadeIn 0s forwards;
+                animation-delay: 1.7s;
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@keyframes mainBlock {
+    18% {
+        width: 0;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 50%;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+        background-color: black;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

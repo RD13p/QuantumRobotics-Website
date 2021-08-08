@@ -1,0 +1,146 @@
+@import url(//db.onlinewebfonts.com/c/f220dbb7bde1d00644ad365e87d02af1?family=Coco+Gothic);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    overflow: hidden;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**Reset para REMS- 62.5% = 10px de 16px **/
+}
+
+.QU {
+    -webkit-animation: mainFadeIn 0s forwards;
+    animation: mainFadeIn 0s forwards;
+    -webkit-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    position: relative;
+    color: black;
+    font-family: "Coco Gothic";
+    font-size: 10rem;
+    font-weight: 550;
+}
+
+.block {
+    width: 0%;
+    background: #1eb6db;
+    position: absolute;
+    height: 10rem;
+    -webkit-animation: mainBlock 5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation: mainBlock 5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+}
+
+.contenedor-titulo {
+    width: 100%;
+    height: 100vh;
+    background: #f0f4f6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contenedor-titulo .box {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.contenedor-titulo .box .title {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.contenedor-titulo .box .title h1 {
+    font-family: "Coco Gothic";
+    color: #1eb6db;
+    font-size: 10rem;
+    font-weight: 550;
+    -webkit-animation: mainFadeIn 0s forwards;
+    animation: mainFadeIn 0s forwards;
+    -webkit-animation-delay: 1.7s;
+    animation-delay: 1.7s;
+    opacity: 0;
+}
+
+@-webkit-keyframes mainBlock {
+    18% {
+        width: 0;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 51%;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+        background-color: black;
+    }
+}
+
+@keyframes mainBlock {
+    18% {
+        width: 0;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 51%;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+        background-color: black;
+    }
+}
+
+@-webkit-keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*# sourceMappingURL=animtitulo.css.map */

@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**Reset para REMS- 62.5% = 10px de 16px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.construction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, 40%);
+}
+
+@media (min-width: 768px) {
+    .construction {
+        transform: translate(0%, 20%);
+    }
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+
+/*Global*/
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
