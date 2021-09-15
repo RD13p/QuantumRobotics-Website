@@ -2,205 +2,129 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" type=”image/png” href="/img/logos/QLogo.png">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Quantum Robotics</title>
-
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type=”image/png” href="/img/QLogo.png">
+    <script src="https://kit.fontawesome.com/e96f709a7e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,100&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <title>Inicio - Quantum Robotics</title>
 </head>
 
 <body>
 
-    <header class="site-header inicio">
-        <div class="contenedor contenido-header">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="/img/QLogo.png" alt="Logotipo Quantum Robotics">
-                </a>
-                <div class="mobile-menu">
-                    <a href="#navegacion">
-                        <img src="img/barras.svg" alt="Icono Menu">
-                    </a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logos/QLogo.png" alt="" width="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#features">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#features">Rovers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#features">Quantum Academy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#features">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#features">English</a>
+                    </li>
+                </ul>
 
-                <nav id="navegacion" class="navegacion">
-                    <a href="/index.html">Inicio</a>
-                    <a href="/equipo.html">Sobre nosotros</a>
-                    <a href="/rovers-construction.html">Rovers</a>
-                    <a href="/quantumacademy.html">Quantum Academy</a>
-                    <a href="/contact.html">Contacto</a>
-                    <a href="/en/index.html">English</a>
-                </nav>
             </div>
         </div>
-        <!--contenedor-->
-    </header>
+    </nav>
 
-    <div class="contenedor-titulo">
-        <div class="box">
-            <div class="title">
-                <h1>QUANTUM </h1><span class="QU"> ROBOTICS</span>
-            </div>
-        </div>
-        <div class="block"></div>
-    </div>
+    <main class="contenedor-body">
+        <h1>QUANTUM <span>ROBOTICS</span></h1>
 
-    <section class="contenedor-body inicio-nosotros">
-
-        <div class="imagen-nosotros">
-            <img src="img/FotoQuantumRobotics-2021.JPG" alt="Nosotros">
+        <div class="highlight">
+            <h2>Anuncio pro</h2>
         </div>
 
-        <div class="texto-nosotros">
+        <div class="intro-quantum">
             <p>Somos un equipo mexicano de robótica conformado por estudiantes del Tecnológico de Monterrey y el Instituto Politécnico Nacional.
-            </p>
-
-            <p>A través de nuestro proyectos, inspiramos a jóvenes a involucrarse en actividades relacionadas con la robótica y la exploración espacial.
-            </p>
-            <div class="contenedor-boton">
-                <a class="a-button" href="/equipo.html"> <button class="boton boton-azul"> Más sobre nosotros </button> </a>
-            </div>
+               
+                A través de nuestro proyectos, inspiramos a jóvenes a involucrarse en actividades relacionadas con la robótica y la exploración espacial.</p>
+            <img src="/img/Integrantes/FotoQuantumRobotics-2021.JPG" alt="Foto-equipo">
         </div>
-    </section>
+    </main>
 
-    <a href="/rovers-construction.html">
+    <a href="/rovers.html">
         <section id="parallax-inicio" class=" inicio-rover parallax">
             <h2 class="h2-other">Conoce a Rover-to, nuestro rover para University Rover Challenge 2021.</h2>
         </section>
     </a>
 
-    <a href="/rovers-construction.html">
+    <a href="/rovers.html">
         <section id="parallax-iniciomobile" class=" inicio-rover-mobile">
             <h2 class="h2-other">Conoce a Rover-to, nuestro rover para el University Rover Challenge.</h2>
         </section>
     </a>
 
-    <section class="contenedor-body">
-        <h3 class="h3">Nuestros Patrocinadores</h3>
-        <div class="inicio-patrocinios">
-            <div class="patrocinador">
-                <img src="/img/nomadaLogo.png" alt="Nomada">
-            </div>
+    <section class="patrocinadores contenedor-body">
+        <h2 class="encabezado-seccion">Nuestros patrocinadores</h2>
 
-            <div class="patrocinador">
-                <img src="/img/ControlNumericoLogo.png" alt="Control Numérico">
-            </div>
+        <div class="grid-patrocinadores">
+            <div><img class="logo-voxart" src="/img/logos/Voxart-resized.png" alt="Voxart"></div>
+            <div><img src="/img/logos/nomadaLogo.png" alt="Nomada"></div>
+            <div><img src="/img/logos/LOGO-PROTEJ.png" alt="Protej"></div>
+            <div><img src="/img/logos/ControlNumericoLogo.png" alt="CNC México"></div>
+            <div><img src="/img/logos/LOGOHuman.jpeg" alt="Human"></div>
+            <div><img src="/img/logos/motorhub_logo.png" alt="Motorhub"></div>
+            <div><img src="/img/logos/racingCapitalLogo.png" alt="Racing Capital"></div>
+            <div><img src="/img/logos/SKYKOF_Logo.png" alt="Skykof"></div>
+            <div><img src="/img/logos/PrometeaX_logo.svg" alt="PrometeaX"></div>
+            <div><img src="/img/logos/octopylogo.svg" alt="Octopy"></div>
 
-            <div class="patrocinador">
-                <img src="/img/SKYKOF_Logo.png" alt="SkyKof">
-            </div>
-
-            <div class="patrocinador">
-                <img src="/img/motorhub_logo.png" alt="Motorhub">
-            </div>
-
-            <div class="patrocinador">
-                <img src="/img/racingCapitalLogo.png" alt="Racing Capital">
-            </div>
-
-            <div class="patrocinador">
-                <img src="/img/logos/Voxart-resized.png" alt="Voxart">
-            </div>
-
-            <div class="patrocinador">
-                <img src="/img/logos/LOGO-PROTEJ.png" alt="Protej">
-            </div>
-
-            <div class="patrocinador">
-                <img src="/img/logos/totalplaylogo.png" alt="Totalplay">
-            </div>
-
-            <div class="patrocinador">
-                <img src="/img/logos/PrometeaX_logo.svg" alt="PrometeaX">
-            </div>
         </div>
     </section>
 
-    <section class="contenedor-body">
-        <h3 class="h3">También tenemos alianzas con</h3>
-        <div class="inicio-patrocinios">
-            <div class="patrocinador">
-                <img src="/img/talentlogo2.png" alt="TalentLand">
-            </div>
+    <section class="patrocinadores contenedor-body">
+        <h2 class="encabezado-seccion">También tenemos alianzas con</h2>
 
-            <div class="patrocinador">
-                <img src="/img/Logo baden-01.png" alt="Baden">
-            </div>
-
-            <div class="patrocinador">
-                <img src="/img/logos/CDSLogo.png" alt="CDS">
-            </div>
+        <div class="grid-patrocinadores">
+            <div><img class="logo-voxart" src="/img/logos/talentlogo2.png" alt="Talent Land"></div>
+            <div><img src="/img/logos/logo-badenpowell.png" alt="Baden Powell"></div>
+            <div><img src="/img/logos/CDSLogo.png" alt="CDS"></div>
         </div>
     </section>
 
+    <section class="notas ">
+        <h2 class="encabezado-seccion">Nuestro trabajo ha sido reconocido por</h2>
 
+        <div class="grid-medios contenedor-body">
+            <div><img class="logo-voxart" src="/img/logos/forbes-logo.png" alt="Talent Land"></div>
+            <div><img class="logo-voxart" src="/img/logos/forbes-logo.png" alt="Talent Land"></div>
+            <div><img class="logo-voxart" src="/img/logos/forbes-logo.png" alt="Talent Land"></div>
+            <div><img class="logo-voxart" src="/img/logos/forbes-logo.png" alt="Talent Land"></div>
+            <div><img class="logo-voxart" src="/img/logos/forbes-logo.png" alt="Talent Land"></div>
+            <div><img class="logo-voxart" src="/img/logos/forbes-logo.png" alt="Talent Land"></div>
 
-    <section class="contenedor-body contacto-patrocinios">
-        <div class="slider-patrocinios">
-            <div id="wrapper">
-                <div id="slider-wrap">
-                    <ul id="slider">
-                        <li>
-                            <img src="/img/quantumEy.jpg" alt="img1">
-                        </li>
-
-                        <li>
-                            <img src="/img/gente2.jpeg" alt="img2">
-                        </li>
-
-                        <li>
-                            <img src="/img/andoni-vargas-work.JPG" alt="img3">
-                        </li>
-
-                        <li>
-                            <img src="/img/Brazo.jpg" alt="img4">
-                        </li>
-                    </ul>
-
-                    <!--controls-->
-                    <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-                    <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-
-                    <div id="pagination-wrap">
-                        <ul>
-                        </ul>
-                    </div>
-                    <!--controls-->
-
-                </div>
-
-            </div>
-            <!-- partial -->
-            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-            <script src="/js/script.js"></script>
-        </div>
-        <div class="texto-nosotros">
-            <h3>¡Patrocínanos!</h3>
-            <p>Los patrocinadores son una parte fundamental para construir nuestros rovers y poder llevar a cabo nuestras actividades de acción social.
-            </p>
-            <p>Apoya a nuestro equipo con un patrocinio económico o en especie.</p>
-
-            <a class="a-button" href="/contact.html"> <button class="boton boton-azul">Quiero unirme</button> </a>
         </div>
     </section>
+
 
     <footer class="site-footer">
-        <h2 class="logo-footer">
+        <h2 class="logo-foote h2-footerr">
             QUANTUM ROBOTICS
         </h2>
 
-        <nav id="navegacion" class="navegacion">
-            <a href="/index.html">Inicio</a>
-            <a href="/equipo.html">Sobre nosotros</a>
-            <a href="/rovers-construction.html">Rovers</a>
-            <a href="/quantumacademy.html">Quantum Academy</a>
-            <a href="/contact.html">Contacto</a>
-        </nav>
-
+       
         <div class="socialMedia">
             <a href="https://www.facebook.com/qrteam.cem" target="_blank"><img src="/img/fbWhite.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/qrteam.cem" target="_blank"><img src="/img/instaWhite.png" alt="Instagram"></a>
@@ -222,7 +146,10 @@
             &copy; 2021 Quantum Robotics
         </p>
     </footer>
-
+ 
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+   
 </body>
-
 </html>
