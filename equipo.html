@@ -8,11 +8,15 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700;900&display=swap" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type=”image/png” href="/img/QLogo.png">
+    <link rel="shortcut icon" type=”image/png” href="/img/logos/QLogo.png">
     <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/stylesv1.css">
     <link rel="stylesheet" href="/css/styles.css">
+
 
     <script>
         jQuery(document).ready(function($) {
@@ -25,31 +29,41 @@
 </head>
 
 <body>
-    <header class="site-header-cover inicio">
-        <div class="contenedor header-other">
-            <div class="barra">
-                <a href="index.html">
-                    <img src="img/Qblanca.png" alt="Logotipo Quantum Robotics">
-                </a>
-                <div class="mobile-menu">
-                    <a href="#navegacion">
-                        <img src="img/barras.svg" alt="Icono Menu">
-                    </a>
-                </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="/img/logos/QLogo.png" alt="" width="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/equipo.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/rovers.html">Rovers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/quantumacademy.html">Quantum Academy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/en/index.html">English</a>
+                    </li>
+                </ul>
 
-                <nav id="navegacion" class="navegacion-blanco">
-                    <a href="/index.html">Inicio</a>
-                    <a href="/equipo.html">Sobre nosotros</a>
-                    <a href="/rovers-construction.html">Rovers</a>
-                    <a href="/quantumacademy.html">Quantum Academy</a>
-                    <a href="/contact.html">Contacto</a>
-                    <a href="/en/index.html">English</a>
-                </nav>
             </div>
-            <h1 class="title">Nuestro equipo</h1>
         </div>
-        <!--contenedor-->
+    </nav>
+    <header class="site-header-cover inicio">
+        
     </header>
+
+    <h2 style="font-size: 6.4rem;" class="encabezado-seccion"><b>Nuestro equipo</b></h2>
 
     <div class="contenedor-body contador" data-aos="zoom-in-up">
         <ul class="numeros-equipo">
@@ -57,7 +71,7 @@
                 <p class="numero">2</p>Universidades
             </li>
             <li>
-                <p class="numero">29</p>Integrantes
+                <p class="numero">28</p>Integrantes
             </li>
             <li>
                 <p class="numero">7</p>Áreas
@@ -68,8 +82,18 @@
         </ul>
     </div>
 
+    <section class="contenedor-body mision-vision">
+        <div><h2>Misión</h2>
+        <p>Desarrollar actividades que impulsen a las futuras generaciones bajo la terminología STEM (Science, Technology, Engineering and Mathematics), además de poder representar a México con orgullo en competencias internacionales.</p>
+        </div>
+
+        <div><h2>Visión</h2>
+            <p>Ser un equipo de robótica, que mediante el desarrollo de liderazgo, innovación y trabajo en equipo permita ser reconocido a nivel internacional así como también ser un símbolo de inspiración para futuras generaciones.</p>
+            </div>
+    </section>
+
     <section class=" contenedor-body ">
-        <h3 style="padding-top: 2rem;">somos estudiantes de las carreras de ingeniería de</h3>
+        <h3 style="padding-top: 2rem;" class="encabezado-seccion">somos estudiantes de las carreras de ingeniería de</h3>
         <div class="equipo-universidades">
             <div class="patrocinador Universidad">
                 <img src="/img/logos/itesm.png" alt="Tec">
@@ -81,253 +105,475 @@
         </div>
     </section>
 
-    <section class="contenedor-body resumen-areas">
-        <h3>áreas</h3>
-        <div class="area color-izq mecanica-color">
-            <div class="texto">
-                <h4>Mecánica</h4>
-                <p>Diseño, simulación, análisis y manufactura de piezas y sistemas que permiten la estructura y movilidad del rover.
-                </p>
-            </div>
-            <div class="ico-area ico-mecanica">
-                <img src="/img/icon-gear.png" alt="Ico Mecanica">
-            </div>
-
-        </div>
-
-        <div class="area color-der electronica-color">
-            <div class="ico-area ico-electronica">
-                <img src="/img/icon-electronics.png" alt="Ico Electronica">
-            </div>
-            <div class="texto">
-                <h4>Electrónica</h4>
-                <p> Estudio, diseño y construcción de circuitos que permitan gestionar la potencia necesaria para las funciones del rover. </p>
-            </div>
-        </div>
-
-        <div class="area color-izq control-color">
-            <div class="texto">
-                <h4>Control</h4>
-                <p>Programación, planeación e implementación de las acciones remotas y autónomas del rover, utilizando Robot Operating System (ROS) para la unión de los componentes lógicos.</p>
-            </div>
-            <div class="ico-area ico-control">
-                <img src="/img/icon-pc.png" alt="Ico Control">
-            </div>
-        </div>
-
-        <div class="area color-der ciencias-color">
-            <div class="ico-area ico-ciencias">
-                <img src="/img/icon-science.png" alt="Ico Ciencias">
-            </div>
-            <div class="texto">
-                <h4>Ciencias biológicas</h4>
-                <p>Análisis In situ de muestras de terreno para determinar si existen biomoléculas que indiquen la presencia de vida.</p>
-            </div>
-        </div>
-
-        <div class="area color-izq telecom-color">
-            <div class="texto">
-                <h4 class="texto-telecom-mobile">Telecom- unicaciones</h4>
-                <h4 class="texto-telecom-desktop">Telecomunicaciones</h4>
-                <p>Diseño e implementación de la infraestructura necesaria para la comunicación entre el rover y la estación de control en la competencia, mediante el uso de diversas herramientas de análisis.
-                </p>
-            </div>
-            <div class="ico-area ico-telecom">
-                <img src="/img/icon-antenna.png" alt="Ico Telecom">
-            </div>
-        </div>
-
-        <div class="area color-der negocios-color">
-            <div class="ico-area ico-negocios">
-                <img src="/img/icon-money.png" alt="Ico Negocios">
-            </div>
-            <div class="texto">
-                <h4>Negocios</h4>
-                <p>Gestión del tiempo y recursos del equipo mediante diversos planes para obtener resultados más efectivos y eficientes.</p>
-            </div>
-        </div>
-
-        <div class="area color-izq comunicacion-color">
-            <div class="texto">
-                <h4>Comunicación</h4>
-                <p>Manejo de las redes sociales y sitio web del equipo mediante la creación de contenido audiovisual de calidad que permita a personas externas y potenciales patrocinadores conocer al equipo.
-                </p>
-            </div>
-            <div class="ico-area ico-comunicacion">
-                <img src="/img/icon-camera.png" alt="Ico Comunicación">
-            </div>
-        </div>
-
-    </section>
-
-    <section class="contenedor-body">
-        <h3>conoce a nuestros integrantes</h3>
-        <div class="integrantes-grid">
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-marcoMoreno.jpg" alt="Marco Alan">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/marco-moreno-"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Alan Moreno</b><br><span class="area-integrante">Fundador y Líder del equipo</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-mich.jpg" alt="AlexisBedolla">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/michellesg/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Michelle Sánchez</b><br><span class="area-integrante">Cofundadora y Líder de Negocios</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-Ulisesromero.jpg" alt="Ulises Romero">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/ulises-romero-/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Ulises Romero</b><br><span class="area-integrante">Negocios</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-victor.jpg" alt="Víctor Rodríguez">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/vrodriguez-99/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Víctor Rodríguez</b><br><span class="area-integrante">Cofundador y Líder de Comunicación</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-alexisbedolla.jpg" alt="AlexisBedolla">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/alexis-bedolla-carrillo-339945196"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Alexis Bedolla</b><br><span class="area-integrante">Cofundador y Líder de Mecánica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-josuegem.jpeg" alt="JosuéGeminiano">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/josue-geminiano"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Josué Geminiano</b><br><span class="area-integrante">Mecánica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-vargas.jpeg" alt="Emilio Vargas">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/emilio-vargas-flores-0bbab31ab"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Emilio Vargas</b><br><span class="area-integrante">Mecánica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-andoni.jpg" alt="Andoni Dovalina">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/carlos-andoni-dovalina-rivas-172038204"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Andoni Dovalina</b><br><span class="area-integrante">Mecánica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-bere.jpg" alt="Berenice Bautista">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/robotics-berenicebautista"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Berenice Bautista</b><br><span class="area-integrante">Mecánica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-camila.jpeg" alt="Camila Martínez">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/camila-martínez-montes-8a9194204"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Camila Martínez</b><br><span class="area-integrante">Líder de Electrónica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-antoniozavala.jpg" alt="Antonio Zavala">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/jos%C3%A9-antonio-zavala-vel%C3%A1zquez-573b95209/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Antonio Zavala</b><br><span class="area-integrante">Electrónica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-fermendez.jpg" alt="Fernando Méndez">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/fernandom%C3%A9ndez/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Fernando Méndez</b><br><span class="area-integrante">Electrónica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-oscarTorres.jpg" alt="Óscar Torres">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/oscartorresm/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Óscar Torres</b><br><span class="area-integrante">Electrónica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-damian.jpg" alt="Damián García">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/damián-iván-garcía-ravelo-5baa2b1b2"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Damián García</b><br><span class="area-integrante">Electrónica</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-edgaralexis.jpg" alt="Edgar González">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/edalxgoam/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Edgar González</b><br><span class="area-integrante">Líder de Control</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-paul.jpeg" alt="Paul García">
-                <a class="LIn-Integrante" href="http://www.linkedin.com/in/paul-mart%C3%ADn-garc%C3%ADa-morf%C3%ADn-93821120a"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Paul García</b><br><span class="area-integrante">Control</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-samanthaMartinez.jpg" alt="Samantha Martínez">
-                <a class="LIn-Integrante" href="http://linkedin.com/in/samantha-martínez-franco-a236921b7"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Samantha Martínez</b><br><span class="area-integrante">Control</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-ariadna.jpeg" alt="Ariadna Huesca">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/ariadna-huesca-coronado-0766561a6/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Ariadna Huesca</b><br><span class="area-integrante">Control</span></p>
-            </div>
-            <!-- <div class="integrante">
-                <img class="foto-integrante" src="/img/foto-guillermohdz.jpg" alt="Guillermo Hernández">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/guillermo12/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Guillermo Hernández</b><br><span class="area-integrante">Control</span></p>
-            </div> -->
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-karlag.jpg" alt="Karla Garduño">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/karlagardu%C3%B1o/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Karla Garduño</b><br><span class="area-integrante">Líder de Ciencias biológicas</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-davidfdz.jpeg" alt="David Fernández">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/david-arturo-fern%C3%A1ndez-monroy-9a0893144/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>David Fernández</b><br><span class="area-integrante">Ciencias biológicas</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-anamartha.jpg" alt="Ana Vázquez">
-                <a class="LIn-Integrante" href="http://linkedin.com/in/anamarthavs"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Ana Vázquez</b><br><span class="area-integrante">Ciencias biológicas</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-hectorRueda.jpg" alt="Héctor Rueda">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/hectorfantagyro"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Héctor Rueda</b><br><span class="area-integrante">Ciencias biológicas</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-karenmarin.jpeg" alt="Karen Marín">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/karen-itzel-marín-jerónimo-2b1593164"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Karen Marín</b><br><span class="area-integrante">Ciencias biológicas</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-adrianaavila.jpg" alt="Adriana Díaz">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/adriana-di-avila/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Adriana Díaz</b><br><span class="area-integrante">Líder de Telecomunicaciones</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-ramiroa.jpg" alt="Ramiro Aguilar">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/ramiroao/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Ramiro Aguilar</b><br><span class="area-integrante">Telecomunicaciones</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-alexyscoate.jpeg" alt="Alexys Coate">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/alexys-mart%C3%ADn-coate-reyes-aa0197208/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Alexys Coate</b><br><span class="area-integrante">Telecomunicaciones</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-javierAlcantara.jpg" alt="Javier León">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/javierleonalcantara/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Javier León</b><br><span class="area-integrante">Telecomunicaciones</span></p>
-            </div>
-            <div class="integrante">
-                <img class="foto-integrante" src="/img/Integrantes/foto-EmmanuelMartinez.jpg" alt="EmmanuelMartínez">
-                <a class="LIn-Integrante" href="https://www.linkedin.com/in/emmanuel-alejandro-martinez-casillas-5bb072185/"><img src="/img/Linblue.png" alt="LinkedIn"></a>
-                <p class="nombre-integrante"><b>Emmanuel Martínez</b><br><span class="area-integrante">Telecomunicaciones</span></p>
-            </div>
-
+    <section class="contenedor-body info-areas">
+        <h3 class="encabezado-seccion">áreas</h3>
+        <div class="area-resumen area-mecanica">
+            <h3>Mecánica</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nostrum debitis, fugiat doloremque nulla rerum molestiae quisquam voluptatibus aspernatur quia optio iusto eaque ea iste necessitatibus reiciendis ipsam culpa eligendi!</p>
         </div>
     </section>
 
 
+<div class="container contenedor-body">
+        <div class="row justify-content-center">
+        <h3 class="encabezado-seccion">Conoce a nuestros integrantes</h3>
+             
+        </div>
+        <div class="row">
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-marcoMoreno.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/marco-moreno-"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Alan Moreno</h6>
+                <p class="designation">Cofundador y Líder del equipo</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-mich.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/michellesg"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Michelle Sánchez</h6>
+                <p class="designation">Cofundadora y Líder de Negocios</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-Ulisesromero.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/ulises-romero-"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Ulises Romero</h6>
+                <p class="designation">Negocios</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-victor.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/vrodriguez-99/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Víctor Rodríguez</h6>
+                <p class="designation">Cofundador y líder de Comunicación</p>
+              </div>
+            </div>
 
-    <footer class="site-footer">
-        <h2 class="logo-footer">
+            
+          </div>
+
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-alexisbedolla.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/alexis-bedolla-carrillo-339945196"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Alexis Bedolla</h6>
+                <p class="designation">Cofundador y Líder de Mecánica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-josuegem.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/josue-geminiano/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Josué Germiniano</h6>
+                <p class="designation">Mecánica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-vargas.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/emilio-vargas-flores-0bbab31ab"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Emilio Vargas</h6>
+                <p class="designation">Mecánica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-andoni.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/carlos-andoni-dovalina-rivas-172038204"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Andoni Dovalina</h6>
+                <p class="designation">Mecánica</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-bere.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/robotics-berenicebautista"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Berenice Bautista</h6>
+                <p class="designation">Mecánica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-camila.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/camila-martínez-montes-8a9194204"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Camila Martínez</h6>
+                <p class="designation">Líder de Electrónica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-antoniozavala.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/jos%C3%A9-antonio-zavala-vel%C3%A1zquez-573b95209/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Antonio Zavala</h6>
+                <p class="designation">Electrónica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-fermendez.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/fernandoméndez"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Fernando Méndez</h6>
+                <p class="designation">Electrónica</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-oscarTorres.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/oscartorres24/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Oscar Torres</h6>
+                <p class="designation">Electrónica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-damian.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/damián-iván-garcía-ravelo-5baa2b1b2"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Damián García</h6>
+                <p class="designation">Electrónica</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-edgaralexis.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/mwlite/in/edalxgoam"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Edgar González</h6>
+                <p class="designation">Líder de Control</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-memo.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/guillermo12/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Guillermo Hernández</h6>
+                <p class="designation">Control</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-samanthaMartinez.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="http://linkedin.com/in/samantha-martínez-franco-a236921b7"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Samantha Martínez</h6>
+                <p class="designation">Control</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-ariadna.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/ariadna-huesca-coronado-0766561a6"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Ariadna Huesca</h6>
+                <p class="designation">Control</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-karlag.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/karlagarduño/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Karla Garduño</h6>
+                <p class="designation">Líder de Ciencias biológicas</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-davidfdz.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/david-arturo-fern%C3%A1ndez-monroy-9a0893144/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>David Fernández</h6>
+                <p class="designation">Ciencias biológicas</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-anamartha.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://linkedin.com/in/anamarthavs"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Ana Vázquez</h6>
+                <p class="designation">Ciencias biológicas</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-hectorRueda.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/hectorfantagyro"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Héctor Rueda</h6>
+                <p class="designation">Ciencias biológicas</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-karenmarin.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/karen-itzel-marín-jerónimo-2b1593164"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Karen Marín</h6>
+                <p class="designation">Ciencias biológicas</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-adrianaavila.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/adriana-di-avila/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Adriana Díaz</h6>
+                <p class="designation">Líder de Telecomunicaciones</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-EmmanuelMartinez.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/emmanuel-alejandro-martinez-casillas-5bb072185/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Emmanuel Martínez</h6>
+                <p class="designation">Telecomunicaciones</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-ramiroa.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/ramiroao/"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Ramiro Aguilar</h6>
+                <p class="designation">Telecomunicaciones</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-alexyscoate.jpeg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://www.linkedin.com/in/alexys-martín-coate-reyes-aa0197208"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Alexys Coate</h6>
+                <p class="designation">Telecomunicaciones</p>
+              </div>
+            </div>
+          </div>
+          <!-- Single Advisor-->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+              <!-- Team Thumb-->
+              <div class="advisor_thumb"><img src="/img/Integrantes/foto-javierAlcantara.jpg" alt="">
+                <!-- Social Info-->
+                <div class="social-info"><a href="https://linkedin.com/in/javierleonalcantara"><i class="fa fa-linkedin"></i></a></div>
+              </div>
+              <!-- Team Details-->
+              <div class="single_advisor_details_info">
+                <h6>Javier León</h6>
+                <p class="designation">Telecomunicaciones</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          
+          </div>
+        </div>
+      </div>
+
+
+
+      <footer class="site-footer">
+        <h2 class="logo-foote h2-footerr">
             QUANTUM ROBOTICS
         </h2>
 
-        <nav id="navegacion" class="navegacion">
-            <a href="/index.html">Inicio</a>
-            <a href="/equipo.html">Sobre nosotros</a>
-            <a href="/rovers-construction.html">Rovers</a>
-            <a href="/quantumacademy.html">Quantum Academy</a>
-            <a href="/contact.html">Contacto</a>
-            <a href="/en/index.html">English</a>
-        </nav>
-
+       
         <div class="socialMedia">
             <a href="https://www.facebook.com/qrteam.cem" target="_blank"><img src="/img/fbWhite.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/qrteam.cem" target="_blank"><img src="/img/instaWhite.png" alt="Instagram"></a>
@@ -344,7 +590,6 @@
         <h3 class="hashtag">
             #ExploreTheFuture
         </h3>
-
 
         <p class="derechos-footer">
             &copy; 2021 Quantum Robotics
