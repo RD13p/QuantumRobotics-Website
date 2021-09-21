@@ -474,7 +474,7 @@ footer img {
 .single_advisor_profile .single_advisor_details_info {
   position: relative;
   z-index: 1;
-  padding: 30px;
+  padding: 30px 30px 30px 15px;
   text-align: right;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -587,6 +587,246 @@ footer img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+.roverto-cover {
+  background: url(../img/rover/rover-trasera.JPG);
+  background-position: center bottom;
+  background-size: cover;
+  height: 100vh;
+  min-height: 60rem;
+  overflow-x: hidden;
+}
+
+.intro-rover {
+  overflow: hidden;
+}
+
+.intro-rover h1 {
+  color: #0c76c4;
+  font-size: 4.2rem;
+  font-family: "Raleway", sans-serif;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-rover h1 {
+    font-size: 5.4rem;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .intro-rover h1 {
+    font-size: 6.4rem;
+  }
+}
+
+.intro-rover p {
+  margin: 0 1% 2rem 1%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-rover p {
+    margin: 0 5% 5rem 5%;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .intro-rover p {
+    margin: 0 20% 5rem 20%;
+  }
+}
+
+.seccion-info-rover {
+  margin-bottom: 3%;
+}
+
+section .seccion-rover {
+  margin-bottom: 3%;
+}
+
+.feature-img-center {
+  text-align: center;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-img-center img {
+    width: 53%;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .feature-img-center img {
+    width: 60%;
+  }
+}
+
+.feature-img-center .contenido {
+  margin: auto 1rem;
+  display: block;
+  font-size: 1.8rem;
+}
+
+.feature-img-center .contenido h3 {
+  font-size: 3rem;
+  color: #0c76c4;
+  margin-top: 2rem;
+}
+
+.feature-img-center .contenido p {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-img-center .contenido {
+    margin: auto 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .feature-img-center .contenido {
+    margin: auto 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature-img-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .feature-img-center h3 {
+    margin-top: 0;
+  }
+}
+
+.info-derecha {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.feature-img-izq {
+  text-align: center;
+  display: block;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-img-izq img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .feature-img-izq img {
+    width: 55%;
+  }
+}
+
+.feature-img-izq .contenido {
+  margin: auto 6rem;
+  display: block;
+  font-size: 1.8rem;
+}
+
+.feature-img-izq .contenido h3 {
+  font-size: 3rem;
+  color: #0c76c4;
+  margin-top: 2rem;
+}
+
+.feature-img-izq .contenido p {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-img-izq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .feature-img-izq h3 {
+    margin-top: 0;
+  }
+}
+
+.dato-relevante-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.dato-relevante-2 span {
+  font-size: 2rem;
+  color: #1eb6db;
+}
+
+.dato-relevante-2 p {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.feature-img-cover {
+  text-align: center;
+  display: block;
+}
+
+.feature-img-cover img {
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-img-cover img {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .feature-img-cover img {
+    width: 60%;
+  }
+}
+
+.feature-img-cover .contenido {
+  padding: 0;
+  margin: auto 6rem;
+  display: block;
+  font-size: 1.8rem;
+}
+
+.feature-img-cover .contenido h3 {
+  font-size: 3rem;
+  color: #0c76c4;
+  margin-top: 2rem;
+}
+
+.feature-img-cover .contenido p {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature-img-cover .contenido {
+    padding: 0 10%;
+  }
+  .feature-img-cover .contenido h3 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .feature-img-cover .contenido {
+    padding: 0 20%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
